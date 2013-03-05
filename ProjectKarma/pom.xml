@@ -17,9 +17,14 @@
         </developer>
     </developers>
 
+    <ciManagement>
+        <system>jenkins</system>
+        <url>http://ci.dakanilabs.com</url>
+    </ciManagement>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <site.base.url>http://192.168.1.2/archiva/repository</site.base.url>
+        <site.base.url>http://dakanilabs.com/archiva/repository</site.base.url>
     </properties>
 
     <distributionManagement>
@@ -116,6 +121,26 @@
         <repository>
             <id>Bukkit</id>
             <url>http://repo.bukkit.org/content/groups/public</url>
+        </repository>
+        <repository>
+            <id>internal</id>
+            <url>${site.base.url}/internal</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>snapshots</id>
+            <url>${site.base.url}/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
         </repository>
     </repositories>
 </project>
