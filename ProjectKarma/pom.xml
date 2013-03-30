@@ -48,7 +48,7 @@
         <repository>
             <id>release</id>
             <name>Release Repository</name>
-            <url>${site.base.url}/release</url>
+            <url>${site.base.url}/internal</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
