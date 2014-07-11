@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.mitsugaru</groupId>
     <artifactId>ProjectKarma</artifactId>
-    <version>1.7.9</version>
+    <version>1.7.10</version>
     <name>ProjectKarma</name>
     <description>Parent module for all Bukkit plugins.</description>
     <packaging>pom</packaging>
@@ -31,7 +31,7 @@
         <dependency>
             <groupId>org.bukkit</groupId>
             <artifactId>bukkit</artifactId>
-            <version>1.7.9-R0.2</version>
+            <version>1.7.10-R0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>net.milkbowl.vault</groupId>
